@@ -51,7 +51,7 @@
 ```
 dependencies {
 
-    compile 'com.wangnan:gesturelockview:1.0.1'
+    compile 'com.qyang:gesturelockview:1.0.2'
 }
 ```
 
@@ -64,6 +64,11 @@ dependencies {
 3.使用案例请参看 [Android进阶 - 手势解锁](http://www.jianshu.com/p/b064c6325aa6)
 
 ## 版本更新
+**- 1.0.2**
+
+由于急需使用，fork了原作者代码，上传了jcenter 如原对原作者造成影响请联系我。感谢作者的开源
+
+1.更新View初始化时GONE状态下 onDetachedFromWindow回调clear()方法崩溃。
 
 **- 1.0.1**
 
