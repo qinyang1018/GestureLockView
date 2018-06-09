@@ -66,7 +66,7 @@ public class GestureLockView extends View {
 
     /**
      * 点半径（取值范围[0,viewSize的1/6]，通过{@link GestureLockView#mRadiusRatio}属性进行控制）
-     *
+     * <p>
      * 注:mRadius代表单位点的可见半径和有效触摸半径，不会随单位点的动画而改变
      */
     private int mRadius;
@@ -471,8 +471,10 @@ public class GestureLockView extends View {
     private void clear() {
         for (int i = 0; i < 3; i++) { // i为"行标"
             for (int j = 0; j < 3; j++) { // j为"列标"
-                mPoints[i][j].status = Point.POINT_NORMAL_STATUS;
-                mPoints[i][j].radius = mRadius;
+                if (mPoints[i][j] != null) {
+                    mPoints[i][j].status = Point.POINT_NORMAL_STATUS;
+                    mPoints[i][j].radius = mRadius;
+                }
             }
         }
         mPressPoints.clear();

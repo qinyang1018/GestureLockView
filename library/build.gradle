@@ -2,12 +2,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 publish {
-    userOrg = 'wangnan'
-    groupId = 'com.wangnan'
+    userOrg = 'qyang'
+    groupId = 'com.qyang'
     artifactId = 'gesturelockview'
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.2'
     desc = 'GestureLockView is an easy to use and extensible gestures to unlock framework for Android.'
-    website = 'https://github.com/sinawangnan7/GestureLockView'
+    website = 'https://github.com/qinyang1018/GestureLockView'
 }
 
 android {
